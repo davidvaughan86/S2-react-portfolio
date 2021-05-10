@@ -1,0 +1,76 @@
+
+.App {
+    background-color: white;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr 1fr;
+    grid-template-rows: .3fr 1fr 1fr .2fr;
+    grid-template-areas: 
+    
+    'nav nav nav nav'
+    'bar profile profile profile'
+    'bar profile profile profile'
+    'footer footer footer footer'
+    
+    ;
+    grid-gap: 5px
+
+}
+
+
+
+
+.about {
+    background-color: #3d84b8;
+    grid-area: about;
+    width: 500px;
+    height: 300px;
+    margin-left: 20%;
+    border-radius: 10px;
+    text-align: center;
+    
+
+}
+
+.header {
+   background-color: #3f3697;
+   grid-area: nav;
+   text-align: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   
+    
+}
+
+.profile {
+    background-color: #f0ebcc;
+    grid-area: profile;
+   display: flex;
+   flex-direction: column;
+    
+}
+
+.profile img {
+    width:200px;
+    margin-left: 40%;
+    border-radius: 50%
+}
+
+.sidebar {
+    background-color: #344fa1;
+    grid-area: bar;
+    text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+
+.footer {
+    grid-area: footer;
+    background: #3f3697;
+    text-align: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+}
